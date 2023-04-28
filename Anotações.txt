@@ -1,0 +1,20 @@
+###Lembrar
+->para usar os Cores temas no styled componentes, criar o arquivo @types/styled.d.ts
+
+
+###Usei
+-> styled componentes
+-> react-dom
+-> typescript
+-> vite
+-> Radix 
+https://www.radix-ui.com/docs/primitives/overview/introduction
+npm install @radix-ui/react-dialog (para o modal)
+npm install @radix-ui/react-radio-group (para o Radio group)
+-> JSON Server (simula do backend)
+npm i json-server -D
+npx json-server server.json -p 3333
+npx json-server server.json -p 3333 -w (para ficar monitorando as mudanças)
+para fazer o filtro coloca "?" o campo (type por exemplo) e o valor - exemplo http://localhost:3333/transactions?type=income
+npx json-server server.json -p 3333 -w -d 500 (para colocar um delay - ficar mais realista)
+pode salvar no package.json "dev:server": "json-server server.json -p 3333 -w -d 500", e quando for rodar usar o npm run dev:server
