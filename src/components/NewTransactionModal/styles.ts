@@ -15,8 +15,8 @@ export const Content = styled(Dialog.Content)`
   border-radius: 6px;
   padding: 2.5rem 3rem;
   background: ${props => props.theme["gray-800"]};
-  position: fixed;
   //rack para centralizar na tela
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,8 +44,14 @@ export const Content = styled(Dialog.Content)`
       padding: 0 1.25rem;
       border-radius: 6px;
       margin-top: 1.25rem;
-      cursor: pointer;
-      &:hover {
+      cursor: pointer; 
+    
+    &:disabled{
+      opacity:0.6;
+      cursor: not-allowed; 
+    }
+    
+    &:not(:disabled):hover {
         background: ${props => props.theme["green-700"]};
         transition: background-color 0.2s;
       }

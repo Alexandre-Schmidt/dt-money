@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 
 import { Header } from "../../components/Header/index";
 import { Summary } from "../../components/Summary/index";
+import { TransactionsContext } from "../../contexts/TransactionsContext";
+import { dataFormatter, priceFormatter } from "../../utils/formatter";
 import { SearchForm } from "./components/SearchForm";
 
 import {
@@ -10,29 +12,18 @@ import {
   TransactionsTable,
 } from "./styles";
 
-interface Transaction {
+interface Transactions {
   id: number;
   description: string;
-  type: 'income' | 'outcome';
+  type: "income" | "outcome";
   price: number;
   category: string;
   createdAt: string;
 }
 
 export function Transactions() {
-  const [transactions, setTransactions] = useState<Transaction[]>([]);
-
-  async function loadTransactions() {
-    const response = await fetch('http://localhost:3333/transactions')
-    const data = await response.json()
-
-    setTransactions(data)
-  }
-
-  useEffect(() => {
-    loadTransactions()
-  }, []);
-
+  //requisição Http
+  const { transactions } = useContext(TransactionsContext);
 
   return (
     <div>
@@ -43,19 +34,22 @@ export function Transactions() {
         <SearchForm />
         <TransactionsTable>
           <tbody>
-          {transactions.map(transaction => {
+            {transactions.map((transaction) => {
               return (
                 <tr key={transaction.id}>
                   <td width="50%">{transaction.description}</td>
                   <td>
                     <PriceHighlight variant={transaction.type}>
-                      {transaction.price}
+                      {transaction.type === "outcome" && "- "}
+                      {priceFormatter.format(transaction.price)}
                     </PriceHighlight>
                   </td>
                   <td>{transaction.category}</td>
-                  <td>{transaction.createdAt}</td>
+                  <td>
+                    {dataFormatter.format(new Date(transaction.createdAt))}
+                  </td>
                 </tr>
-              )
+              );
             })}
           </tbody>
         </TransactionsTable>
