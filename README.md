@@ -45,7 +45,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2x6LWtFbG91VkkyN2dlQzBEZ0JUdlUzZTFRd3xBQ3Jtc0tsRExqVFFzWEhETGx5QUY4NW1fdFlCYTZKb1lqeEtrNFI2NHc2UTVkZWwzYS1VZkU2VWJmbW5HbE1ucjI1LTBHOWlmNGNSTTMzQ3U1emZlRnVqakNTckxlV3YzdHRBZWg3eUZjajB5SVNZY3VEZy14OA&q=https%3A%2F%2Fwww.figma.com%2Fcommunity%2Ffile%2F1202694130789327431&v=99okStmx-7c). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1138814493269096792/DT-Money). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## 🚀 Instalação e uso
 
@@ -71,4 +71,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+:wave: Confira meu perfil profissional no [LinkedIn](https://www.linkedin.com/in/alexandreborgesschmidt/)
