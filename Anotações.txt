@@ -11,6 +11,10 @@
 -> typescript
 -> vite
 -> Radix 
+-> use-context-selector
+-> useCallback 
+-> useMemo
+
 https://www.radix-ui.com/docs/primitives/overview/introduction
 npm install @radix-ui/react-dialog (para o modal)
 npm install @radix-ui/react-radio-group (para o Radio group)

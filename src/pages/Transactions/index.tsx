@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContextSelector } from "use-context-selector";
 
 import { Header } from "../../components/Header/index";
 import { Summary } from "../../components/Summary/index";
@@ -23,7 +23,9 @@ interface Transactions {
 
 export function Transactions() {
   //requisição Http
-  const { transactions } = useContext(TransactionsContext);
+  const transactions = useContextSelector(TransactionsContext, (context) => {
+    return context.transactions;
+  });
 
   return (
     <div>
