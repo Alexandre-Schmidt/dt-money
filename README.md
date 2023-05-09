@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -18,7 +18,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto Habits" src="src/assets/Capa.png" width="100%">
+  <img alt="projeto DT Money 2.0" src="src/assets/Capa.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -51,10 +51,10 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 ```bash
 # Clone o repositório
-git clone https://github.com/mateusabelli/ignite-todo-app.git
+git clone https://github.com/Alexandre-Schmidt/dt-money.git
 
 # Acesse a pasta do projeto
-cd ignite-todo-app
+cd dt-money
 
 # Instale as dependências
 npm install
